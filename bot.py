@@ -1,3 +1,24 @@
+import discord
+from discord.ext import commands
+#Herouku password: reg + suffix (!)
+bot = commands.Bot(command_prefix='|')
+
+@bot.event
+async def on_ready():
+    print('Logged in as')
+    print(bot.user.name)
+    print(bot.user.id)
+    print('------')
+
+@bot.command()
+async def add(ctx, a: int, b: int):
+    await ctx.send(a+b)
+
+@bot.command()
+async def multiply(ctx, a: int, b: int):
+    await ctx.send(a*b)
+
+@bot.command()
 async def greet(ctx):
     await ctx.send(":smiley: :wave: Hello, there!")
 
@@ -36,4 +57,3 @@ async def help(ctx):
     await ctx.send(embed=embed)
 
 bot.run('NDU0ODQ3MzM3MTI3NDc3MjY4.DfzjQA.urHEOHPd8BD4u80YEZt5LWQvUcI')
-
