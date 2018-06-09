@@ -35,6 +35,7 @@ async def help(ctx):
 
     await ctx.send(embed=embed)
 
-Token = open('prickbot/assets/token.txt').read
+Token = open("prickbot/assets/token.txt","r")
+Token = Token.read()
 bot.run(Token)
 
