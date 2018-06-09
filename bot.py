@@ -56,4 +56,4 @@ async def help(ctx):
 
     await ctx.send(embed=embed)
 
-bot.run('NDU0ODQ3MzM3MTI3NDc3MjY4.DfzjQA.urHEOHPd8BD4u80YEZt5LWQvUcI')
+bot.run(Token)
