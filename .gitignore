@@ -1,5 +1,5 @@
 # Bot token
-/assets/token.txt
+**/assets/token.txt
 
 #gitignore
-.gitignore
+**.gitignore
